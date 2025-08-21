@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #a{
+            width: 1000px;
+            /* font-weight: bold; */
+            margin: 20px auto;
+            /* text-align: center; */
+           
+        }
+        #b{
+            width: 250px;
+            height: 750px;
+            background-color: rgb(203, 237, 209);
+            float: left;
+        }
+        #c{
+            width: 750px;
+            height: 750px;
+            background-color: rgb(167, 241, 228);
+
+        }
+        .d{
+            width: 230px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            background-image: url("../media/가나디.jpg");
+            background-repeat: no-repeat;
+            border-radius: 50%;
+        }
+        #e{
+            font-weight: bold;
+            text-align: center;
+        }
+        table, tr, td, th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    자기소개 페이지~
+    <div id="a">
+        <div id="b">
+            <div class="d" style="background-size:cover ;"></div>
+            <h3>Kwon Hyeok Jun(권혁준)</h3>
+            <br>
+            프로그래밍 처음 시작!
+            <br>
+            Inchen, Korea
+            <br>
+            Email : gurwns9035@naver.com
+        </div>
+        <div id="c">
+            <h2 style="text-align: center;">자기소개 Page</h2>
+            <br>
+            개발자가 되기 위하여 공부중입니다.
+            <br>
+            취업을 목표로 열심히 코딩 공부중입니다~
+            <br>
+            <h2>Experience</h2>
+            <ul>
+                <li>프론트엔드
+                    <ul>
+                        <li>현재 HTML만 배움(추가로 CSS, JAVASCRIPT 배울 예정)</li>
+                    </ul>
+                </li>
+                <li>백엔드
+                    <ul>
+                        <li>자바(아직 잘 못함)</li>
+                        <li>오라클(아직 잘 못함)</li>
+                        <li><span style="color: red;">백엔드쪽에 흥미를 더 가지고 있음</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>보유기술</h2>
+            <ul>
+                <li>자바</li>
+                <li>오라클</li>
+                <li>HTML</li>
+            </ul>
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>구분</th>
+                </tr>
+                <tr>
+                    <td>인천재능대학교</td>
+                    <td>전자공학과</td>
+                    <td>2015.3~2023.2</td>
+                    <td rowspan="2">졸업</td>
+                </tr>
+                <tr>
+                    <td>인하부속 고등학교</td>
+                    <td>이과</td>
+                    <td>2012.3~2015.2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
