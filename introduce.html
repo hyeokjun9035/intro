@@ -61,6 +61,15 @@
         li {
             margin-left: -5px;
         }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -76,8 +85,10 @@
             <br>
             Email : gurwns9035@naver.com
             <div>
-                <span onclick="fnChange()"><a href="https://github.com/ljs1990-tj/HTML_20250819.git">Github</a></span>
+                <span>Git 주소 : <a href="https://github.com/hyeokjun9035/html.git"
+                        target="_blank">Github</a></span>
             </div>
+            <div class="time">현재시간</div>
         </div>
     </div>
     <div id="c">
@@ -131,9 +142,13 @@
         </table>
     </div>
 </body>
+
 </html>
 <script>
-    function fnChange(){
-        window.open(`user-info.html?userId=${userId}`, "user", "with=500, height=500");
-    }
+    setInterval(()=>{
+        let g = new Date();
+        let td = document.querySelector(".time");
+        let time = g.getHours() + ":" + g.getMinutes() + ":" + g.getSeconds();
+        td.innerHTML = time;
+    }, 1000);
 </script>
