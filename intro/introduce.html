@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            width: 1000px;
+            /* font-weight: bold; */
+            margin: 20px auto;
+            /* text-align: center; */
+
+        }
+
+        .b {
+            width: 280px;
+            height: 750px;
+            background-color: rgb(203, 237, 209);
+            padding-left: 15px;
+            float: left;
+        }
+
+        #c {
+            width: 500px;
+            height: 750px;
+            background-color: rgb(167, 241, 228);
+            padding-left: 20px;
+            float: left;
+
+        }
+
+        #d {
+            width: 230px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            background-image: url("../media/가나디.jpg");
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            clear: both;
+        }
+
+        #e {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul,
+        li {
+            margin-left: -5px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <div class="b">
+            <div id="d" style="background-size:cover ;"></div>
+            <h3 style="text-align: center;">Kwon Hyeok Jun(권혁준)</h3>
+            <br>
+            프로그래밍 처음 시작!
+            <br>
+            주소 : Inchen, Korea
+            <br>
+            Email : gurwns9035@naver.com
+            <div>
+                <span>Git 주소 : <a href="https://github.com/hyeokjun9035/html.git"
+                        target="_blank">Github</a></span>
+            </div>
+            <div class="time">현재시간</div>
+        </div>
+    </div>
+    <div id="c">
+        <h2 style="text-align: center;">자기소개 Page</h2>
+        <br>
+        개발자가 되기 위하여 공부중입니다.
+        <br>
+        취업을 목표로 열심히 코딩 공부중입니다~
+        <br>
+        <h2>Experience</h2>
+        <ul>
+            <li>프론트엔드
+                <ul>
+                    <li>현재 HTML만 배움(추가로 CSS, JAVASCRIPT 배울 예정)</li>
+                </ul>
+            </li>
+            <li>백엔드
+                <ul>
+                    <li>자바(아직 잘 못함)</li>
+                    <li>오라클(아직 잘 못함)</li>
+                    <li><span style="color: red; font-weight: bold;">백엔드쪽에 흥미를 더 가지고 있음</span></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>보유기술</h2>
+        <ul>
+            <li>자바</li>
+            <li>오라클</li>
+            <li>HTML</li>
+        </ul>
+        <h2>Education</h2>
+        <div style="padding-left: 170px; color: red; font-weight: bold;">학력사항</div>
+        <table>
+            <tr>
+                <th>출신학교</th>
+                <th>전공</th>
+                <th>기간</th>
+                <th>구분</th>
+            </tr>
+            <tr>
+                <td>XX대학교</td>
+                <td>전자공학과</td>
+                <td>20XX.3~20XX.2</td>
+                <td rowspan="2">졸업</td>
+            </tr>
+            <tr>
+                <td>XX 고등학교</td>
+                <td>이과</td>
+                <td>20XX.3~20XX.2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+<script>
+    setInterval(()=>{
+        let g = new Date();
+        let td = document.querySelector(".time");
+        let time = g.getHours() + ":" + g.getMinutes() + ":" + g.getSeconds();
+        td.innerHTML = time;
+    }, 1000);
+</script>
